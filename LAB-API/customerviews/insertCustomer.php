@@ -143,13 +143,10 @@
                         // Convertimos el objeto SimpleXMLElement a string XML
                         $xml_string = $xml->asXML();
 
-                        // URL de la API de PrestaShop (actualiza con tu URL)
                         $url = 'http://172.20.10.3/api/customers';
 
-                        // API Key para autenticar la solicitud (debe estar habilitada en PrestaShop)
                         $api_key = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M';
 
-                        // Inicializamos cURL
                         $ch = curl_init();
 
                         // Configuramos cURL para realizar la solicitud POST

@@ -128,7 +128,6 @@
                         $active = $_POST['active'];
 
                         // Creamos el XML para la solicitud
-                        // Creamos el XML para la solicitud
                         $xml = new SimpleXMLElement('<prestashop/>');
                         $xml->addAttribute('xmlns:xlink', 'http://www.w3.org/1999/xlink');
 
@@ -140,7 +139,6 @@
                         // Precio
                         $product->addChild('price', $price);
 
-                        // Nombre con lenguaje específico
                         $nameElement = $product->addChild('name');
                         $nameLang = $nameElement->addChild('language', $name);
                         $nameLang->addAttribute('id', '1'); // ID de idioma
@@ -169,10 +167,8 @@
                         $xml_string = $xml->asXML();
 
 
-                        // URL de la API de PrestaShop (actualiza con tu URL)
                         $url = 'http://172.20.10.3/api/products';
 
-                        // API Key para autenticar la solicitud (debe estar habilitada en PrestaShop)
                         $api_key = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M';
 
                         // Inicializamos cURL

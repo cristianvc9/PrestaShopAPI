@@ -19,9 +19,7 @@
         .card-img-top {
             width: 100%;
             height: 200px;
-            /* Ajusta el alto deseado */
             object-fit: cover;
-            /* Ajusta la imagen para que cubra todo el contenedor */
         }
     </style>
 </head>
@@ -185,4 +183,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html> 

@@ -123,12 +123,10 @@
                         ini_set('display_startup_errors', 1);
                         error_reporting(E_ALL);
 
-                        // ID del producto a actualizar (puedes obtenerlo de $_GET o definirlo de otra manera)
-                        $productId = isset($_GET['id']) ? $_GET['id'] : 43; // Cambia esto si necesitas otro ID
-                        $apiUrl = "http://172.20.10.3/api/products/$productId"; // URL de la API
-                        $apiKey = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M'; // Cambia esto por tu API Key
+                        $productId = isset($_GET['id']) ? $_GET['id'] : 43; 
+                        $apiUrl = "http://172.20.10.3/api/products/$productId"; 
+                        $apiKey = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M'; 
 
-                        // Inicializa cURL para obtener los detalles del producto
                         $ch = curl_init();
                         curl_setopt($ch, CURLOPT_URL, $apiUrl);
                         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -160,7 +158,6 @@
 
                         // Verifica si se envió el formulario
                         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-                            // Obtén los datos del formulario
                             $name = $_POST['name'];
                             $reference = $_POST['reference'];
                             $description = $_POST['description'];
