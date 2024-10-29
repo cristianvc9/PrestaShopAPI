@@ -126,7 +126,7 @@
 
 
                         $productId = isset($_GET['id']) ? $_GET['id'] : null;
-                        $apiUrl = "http://10.0.0.36/api/products/$productId";
+                        $apiUrl = "http://172.20.10.3/api/products/$productId";
                         $apiKey = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M';
 
 

@@ -65,7 +65,7 @@
                     <?php
                     $categoriesCurl = curl_init();
                     curl_setopt_array($categoriesCurl, array(
-                        CURLOPT_URL => 'http://10.0.0.36/api/categories?display=full',
+                        CURLOPT_URL => 'http://172.20.10.3/api/categories?display=full',
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_HTTPHEADER => array('Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06'),
                     ));
@@ -89,7 +89,7 @@
                     <?php
                     $curl = curl_init();
                     curl_setopt_array($curl, array(
-                        CURLOPT_URL => 'http://10.0.0.36/api/products?display=full',
+                        CURLOPT_URL => 'http://172.20.10.3/api/products?display=full',
                         CURLOPT_RETURNTRANSFER => true,
                         CURLOPT_HTTPHEADER => array('Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06'),
                     ));
@@ -102,7 +102,7 @@
                     {
                         $curl = curl_init();
                         curl_setopt_array($curl, array(
-                            CURLOPT_URL => "http://10.0.0.36/api/categories/$categoryId",
+                            CURLOPT_URL => "http://172.20.10.3/api/categories/$categoryId",
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_HTTPHEADER => array('Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06'),
                         ));
@@ -125,7 +125,7 @@
 
                         $curl = curl_init();
                         curl_setopt_array($curl, array(
-                            CURLOPT_URL => "http://10.0.0.36/api/images/products/$productId/$imageId",
+                            CURLOPT_URL => "http://172.20.10.3/api/images/products/$productId/$imageId",
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_HTTPHEADER => array(
                                 "Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06",

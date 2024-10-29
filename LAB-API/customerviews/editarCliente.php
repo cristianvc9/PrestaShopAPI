@@ -125,7 +125,7 @@
                         error_reporting(E_ALL);
 
                         $customerId = isset($_GET['id']) ? $_GET['id'] : 1;
-                        $apiUrl = "http://10.0.0.36/api/customers/$customerId";
+                        $apiUrl = "http://172.20.10.3/api/customers/$customerId";
                         $apiKey = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M';
 
                         $ch = curl_init();

@@ -125,7 +125,7 @@
                         $curl = curl_init();
 
                         curl_setopt_array($curl, array(
-                            CURLOPT_URL => 'http://10.0.0.36/api/customers?display=full',
+                            CURLOPT_URL => 'http://172.20.10.3/api/customers?display=full',
                             CURLOPT_RETURNTRANSFER => true,
                             CURLOPT_ENCODING => '',
                             CURLOPT_MAXREDIRS => 10,

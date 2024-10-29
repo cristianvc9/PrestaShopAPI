@@ -5,7 +5,7 @@ if (!isset($_GET['id'])) {
 }
 
 $productId = (int)$_GET['id'];
-$apiUrl = "http://10.0.0.36/api/products/$productId";
+$apiUrl = "http://172.20.10.3/api/products/$productId";
 $authHeader = "Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06";
 
 // Obtener los detalles del producto
@@ -30,7 +30,7 @@ function getImageUrl($productId, $imageId)
 
     $curl = curl_init();
     curl_setopt_array($curl, array(
-        CURLOPT_URL => "http://10.0.0.36/api/images/products/$productId/$imageId",
+        CURLOPT_URL => "http://172.20.10.3/api/images/products/$productId/$imageId",
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_HTTPHEADER => array(
             "Authorization: Basic VVdVN1oxUURJNEFGOFlaTEYzQ0c1UjZFQlhSNURCOE06",

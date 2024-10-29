@@ -125,7 +125,7 @@
 
                         // ID del producto a actualizar (puedes obtenerlo de $_GET o definirlo de otra manera)
                         $productId = isset($_GET['id']) ? $_GET['id'] : 43; // Cambia esto si necesitas otro ID
-                        $apiUrl = "http://10.0.0.36/api/products/$productId"; // URL de la API
+                        $apiUrl = "http://172.20.10.3/api/products/$productId"; // URL de la API
                         $apiKey = 'UWU7Z1QDI4AF8YZLF3CG5R6EBXR5DB8M'; // Cambia esto por tu API Key
 
                         // Inicializa cURL para obtener los detalles del producto
